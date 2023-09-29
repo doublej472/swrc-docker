@@ -12,7 +12,6 @@ When using this to run Repcom servers you get:
 * Removed CD key check
 * Use community supported GameSpy server browser (using openSpy)
 * Tuned `System.ini`:
-  * 35 tickrate
   * Default gamemode changed to CTF with custom settings
   * Include custom maps dir at `/maps`, so you can keep custom maps separate from normal maps
 
