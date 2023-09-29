@@ -2,7 +2,7 @@
 
 ## About
 
-Getting a Repcom server running by hand is painful. Getting it running on Linux is more painful
+Getting a Repcom server running by hand is painful. Getting it running on Linux is more painful.
 This repo hopes to reduce that pain to the bare minimum by making many assumptions and being opinionated.
 
 When using this to run Repcom servers you get:
