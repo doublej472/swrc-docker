@@ -8,7 +8,7 @@ as the `Dockerfile`.
 Then run this to build the container image:
 
 ```bash
-podman build . -t repcom-container:latest
+docker build . -t repcom-container:latest
 ```
 
 ## Running
