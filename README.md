@@ -42,3 +42,6 @@ docker run -it \
 	--mount=type=bind,source=maps,destination=/maps,ro=true \
 	--name repcom repcom-container:latest
 ```
+
+Feel free to add `--network=host` and get rid of the port forwards so that connections are made directly to the server.
+The maximum connection attempts per IP per minute has been increased to 60 so this may not be required.
