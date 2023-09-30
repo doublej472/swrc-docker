@@ -2,11 +2,11 @@ FROM --platform=linux/i386 debian:12
 
 COPY repcom/ /repcom/
 
-RUN apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y wget xpra unzip && rm -rf /var/lib/apt/lists/*
 RUN mkdir -pm755 /etc/apt/keyrings && wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
 RUN wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bookworm/winehq-bookworm.sources
 
-RUN apt-get update && apt-get install -y --install-recommends unzip winehq-stable wine-stable-i386:i386 && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --install-recommends winehq-stable wine-stable-i386:i386 && rm -rf /var/lib/apt/lists/*
 
 COPY files/debian.sources /etc/apt/sources.list.d/debian.sources
 
